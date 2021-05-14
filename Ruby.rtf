@@ -1,0 +1,113 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Georgia;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red252\green115\blue96;\red255\green255\blue255;\red255\green255\blue255;
+\red165\green192\blue255;\red254\green218\blue112;\red255\green255\blue255;\red117\green255\blue242;}
+{\*\expandedcolortbl;;\cssrgb\c99984\c53665\c44913;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c100000\c100000\c99985;
+\cssrgb\c70401\c80229\c100000;\cssrgb\c99887\c87691\c51096;\cssrgb\c100000\c100000\c100000;\cssrgb\c51425\c100000\c96098;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15500\viewh12780\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc\partightenfactor0
+
+\f0\fs96 \cf0 Ruby
+\fs48 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 https://ruby-doc.org/core-2.1.5/String.html\
+\
+Stampe:\
+Puts = per stampare che porta alla prossima riga\
+Print = stampa ma se mettessimo due print di seguito stamperebbe tutti e due insieme nella stessa riga\
+\
+Stringhe:\
+Length = lunghezza stringa\
+Reverse = stringa reverse\
+Upcase = stringa tutta maiuscola\
+Downcase = stringa tutta minuscola    downcase!\
+Differenza fra downcase e downcase! :\
+Downcase! \'e8 detto metodo bang, esso modifica anche l\'92elemento fonte\
+Possiamo mettere pi\'f9 attributi come downcase o reverse nella stessa linea\
+Byteslice: stringa.byteslice(indice) ti seleziona solo l\'92indice della/e lettere che hai selezionato come indice. Es: \'93Hello\'94.byteslice(2) = \'93t\'94\
+Casecmp: ti fa controllare se una stringa contiene una stringa che specifichi, se si, stampa true, 0, se no, stampa false, 1\
+Center: centra una specifica stringa.center in uno spazio di caratteri che specifichi, in pi\'f9, puoi scrivere:\
+\'93hello\'94.center(20, \'93123\'94)	== 	ti dar\'e0 hello centrato in 20 spazi, contenuto fra 123 ripetuto\
+Chr: stampa l\'92inizio di una stringa,  in un carattere \
+Clear: pulisce il contenuto di una stringa/variabile \
+To_f: converte una stringa di numeri in intero/float, se la stringa non ha numeri, returna 0.0\
+\
+Commenti:\
+Commenti con #\
+Multi commenti con =begin, = end\
+\
+Cicli:\
+Possiamo formare dei cicli con \'91while\'92, e anche con until\
+Until: fino a quando la condizione non \'e8 soddisfatta, il ciclo non si ferma\
+Qua c\'92\'e8 un esempio:\
+While counter < 10:\
+	puts \'85. \
+\
+Until counter > 10\
+	puts \'85.\
+\
+La differenza fra i due, \'e8 che il while funziona fino a quando i componenti sono dentro alla condizione, mentre until fino a quando non lo sono\
+\
+For: for num in 1\'8515, il for si pu\'f2 differenziare:\
+Con .. : i numeri vanno da 1 a 15\
+Con \'85 : i numeri vanno da 1 a 14\
+\
+Vi \'e8 anche il loop: il loop esegue le sue istruzioni fino a quando non trova il break, \'e8 come un while True. \
+\pard\pardeftab720\sl480\partightenfactor0
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 i\cf4 \strokec4  = \cf2 \strokec2 20\cf4 \strokec4 \
+\cf2 \strokec2 loop\cf4 \strokec4  \cf5 \strokec5 do\cf4 \strokec4 \
+  \cf2 \strokec2 i\cf4 \strokec4  -= \cf2 \strokec2 1\cf4 \strokec4 \
+  \cf2 \strokec2 puts\cf4 \strokec4  \cf6 \strokec6 "#\{\cf2 \strokec2 i\cf6 \strokec6 \}"\cf4 \strokec4 \
+  \cf2 \strokec2 break\cf4 \strokec4  \cf5 \strokec5 if\cf4 \strokec4  \cf2 \strokec2 i\cf4 \strokec4  <= \cf2 \strokec2 0\cf4 \strokec4 \
+\cf5 \strokec5 end\cf4 \strokec4 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+Next: il metodo next, ti porta ad eseguire prima una azione, per poi andare avanti con il codice, per esempio:\
+\pard\pardeftab720\sl480\partightenfactor0
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 i\cf4 \strokec4  = \cf2 \strokec2 20\cf4 \strokec4 \
+\cf2 \strokec2 loop\cf4 \strokec4  \cf5 \strokec5 do\cf4 \strokec4 \
+  \cf2 \strokec2 i\cf4 \strokec4  -= \cf2 \strokec2 1\cf4 \strokec4 \
+  \cf5 \strokec5 next\cf4 \strokec4  \cf5 \strokec5 if\cf4 \strokec4  \cf2 \strokec2 i\cf4 \strokec4  % \cf2 \strokec2 2\cf4 \strokec4  != \cf2 \strokec2 0\cf4 \strokec4 \
+  \cf2 \strokec2 print\cf4 \strokec4  \cf6 \strokec6 "#\{\cf2 \strokec2 i\cf6 \strokec6 \}"\cf4 \strokec4 \
+  \cf2 \strokec2 break\cf4 \strokec4  \cf5 \strokec5 if\cf4 \strokec4  \cf2 \strokec2 i\cf4 \strokec4  <= \cf2 \strokec2 0\cf4 \strokec4 \
+\cf5 \strokec5 end
+\f1\fs28 \cf7 \cb1 \strokec7 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+Vi \'e8 un altro metodo per creare un ciclo: each do. Esso esegue le istruzioni per ogni elemento che c\'92\'e8 nella lista che abbiamo specificato\
+\pard\pardeftab720\sl480\partightenfactor0
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 array\cf4 \strokec4  = [\cf2 \strokec2 1\cf4 \strokec4 ,\cf2 \strokec2 2\cf4 \strokec4 ,\cf2 \strokec2 3\cf4 \strokec4 ,\cf2 \strokec2 4\cf4 \strokec4 ,\cf2 \strokec2 5\cf4 \strokec4 ]\
+\
+\cf2 \strokec2 array\cf4 \strokec4 .\cf8 \strokec8 each\cf4 \strokec4  \cf5 \strokec5 do\cf4 \strokec4  |\cf5 \strokec5 x\cf4 \strokec4 |\
+  \cf2 \strokec2 x\cf4 \strokec4  += \cf2 \strokec2 10\cf4 \strokec4 \
+  \cf2 \strokec2 puts\cf4 \strokec4  \cf6 \strokec6 "#\{\cf2 \strokec2 x\cf6 \strokec6 \}"\cf4 \strokec4 \
+\cf5 \strokec5 end
+\f1\fs28 \cf7 \cb1 \strokec7 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+Un altro ancora, dio mio quanti ce ne sono, \'e8 il .times:\
+numero_volte_da_eseguire.times \'93azione\
+\
+Condizioni:\
+Unless \'e8 un if che controlla per\'f2 per il false, quindi si avvera se la condizione \'e8 falsa\
+And = &&\
+Or = ||\
+Not = !\
+Prima vanno i not, poi gli and, poi gli or.\
+\
+Numeri:\
+Possiamo fare come su Python le operazioni con +=, -=, \'85\
+Abs: scrive il valore assoluto di un numero\
+puts (numero).abs\
+\
+Liste:\
+Vi sono sia append che prepend, append aggiunge alla fine, prepend all\'92inizio. Possono essere scritti rispettivamente anche push e unshift.\
+Index: trova l\'92indice di un elemento di una lista tramite sua descrizione\
+[1,2,3,4,5].index(4) returna 3, perch\'e8 l\'92indice di 4 \'e8 3\
+Length: returna la lunghezza di una lista, lo si pu\'f2 usare anche con le stringhe}
